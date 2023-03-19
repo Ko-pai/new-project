@@ -1,0 +1,1 @@
+const abc= document.querySelector(".a")
