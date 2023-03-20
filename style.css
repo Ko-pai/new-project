@@ -14,8 +14,16 @@ body{
 
 
 }
+.main-container{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .card-container{
-    width: 40%;
+    width: 50%;
     height: 450px;
     display: flex;
     border-radius: 20px;
@@ -30,6 +38,7 @@ body{
     border-radius: inherit;
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 .h1-container{
     width: 12rem;
@@ -285,3 +294,42 @@ button:active{
 }
 
 
+
+/* for desktop */
+@media (max-width : 1024px){
+        .card-container{
+            width: 80%;
+        }
+}
+/* For mobile */
+@media (max-width : 500px){
+    .card-container{
+        flex-direction: column;
+        height: 100%;
+        width: 100vw;
+        margin-top: -10px;
+        border-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: none;
+    }
+    .h1-container{
+        margin-left: 20%;
+        
+    }
+    .bottom{
+        margin-bottom: 20px;
+    }
+    button{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width : 375px){
+    .h1-container{
+        margin-left: 70px;
+    }
+    .bottom div{
+        width: 80%;
+    }
+}
