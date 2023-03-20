@@ -1,0 +1,286 @@
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.card-container{
+    width: 40%;
+    height: 450px;
+    display: flex;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 0px 30px rgba(129, 126, 126, 0.4);
+}
+
+/* Left sight style */
+.left{
+    flex: 3;
+    background : linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: inherit;
+    text-align: center;
+    justify-content: center;
+}
+.h1-container{
+    width: 12rem;
+    display: flex;
+    padding: 10px;
+    border-radius: 50%;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    margin-left: 30px;
+    
+    
+
+}
+.left h3{
+    font-weight: 400;
+    opacity: 0.8;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.h1-container span{
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 10px;
+}
+.h1-container p{
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-weight: lighter;
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.bottom {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom span{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    letter-spacing: .8px;
+}
+.bottom div{
+    width: 70%;
+    font-weight: 300;
+    opacity: 0.8;
+    font-size: 14px;
+    
+}
+
+/* Right sight style */
+.right{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+}
+.right h2{
+    color: black;
+    align-self: flex-start;
+    font-size: 20px;
+    font-weight: 600;
+}
+.score-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.h2Con{
+    width: 80%;
+    margin-top: 20px;
+}
+.h2Con h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+/*  for Reaction style */
+.reaction{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px ;
+    background-color:hsla(0, 66%, 89%, 0.3) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.reaction > .reaction-left-sight{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+}
+.reaction > .reaction-left-sight span{
+    color: hsl(0, 100%, 67%);
+    margin-left: 10px;
+}
+
+
+.reaction > .reaction-right-sight{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+}
+.reaction > .reaction-right-sight p{
+    opacity: 0.7;
+}
+
+/*  for memory style */
+.memory{
+    width: 80%;
+    height: 50px;
+    background-color:hsla(65, 83%, 81%,0.3);
+    border-radius: 10px ;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.memory > .reaction-left-sight{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+}
+.memory > .reaction-left-sight span{
+    color: hsl(39, 100%, 56%);
+    margin-left: 10px;
+}
+
+
+.memory > .reaction-right-sight{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+}
+.memory > .reaction-right-sight p{
+    opacity: 0.7;
+}
+
+
+/*  for verbal style */
+.verbal{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px ;
+    background-color:hsla(166, 100%, 37%,0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.verbal > .reaction-left-sight{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+}
+.verbal > .reaction-left-sight span{
+    color: hsl(166, 100%, 37%);
+    margin-left: 10px;
+}
+
+
+.verbal > .reaction-right-sight{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+}
+.verbal > .reaction-right-sight p{
+    opacity: 0.7;
+}
+
+
+/*  for visual style */
+.visual{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px ;
+    background-color:hsla(234, 89%, 64%, 0.2)  ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.visual > .reaction-left-sight{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+}
+.visual > .reaction-left-sight span{
+    color: hsl(234, 85%, 45%);
+    margin-left: 10px;
+}
+
+
+.visual > .reaction-right-sight{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+}
+.visual > .reaction-right-sight p{
+    opacity: 0.7;
+}
+
+/* button */
+button{
+    width: 70%;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 4rem;
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+button:active{
+    background:linear-gradient(hsl(263, 79%, 49%),hsl(224, 75%, 62%) );
+    
+}
+
+/* click style */
+
+.reactionColor{
+    background: rgba(163, 158, 158, 0.4);
+}
+
+
